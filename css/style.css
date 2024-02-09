@@ -23,7 +23,7 @@ body {
     left: 10px;
     width: 180px;
     height: 80px;
-    background-color: black;
+    background-color: green;
 }
 
 #dialogBar {
@@ -34,13 +34,15 @@ body {
     position: relative;
     width: 800px;
     height: 64px;
-    background-color: white;
+    background-color: black;
 }
 
 #heroAvatar {
-    width: 32px;
-    height: 64px;
+    width: 100px;
+    height: 100px;
     background-color: orange;
+    bottom: 0px;
+    left: 0px;
 }
 
 #heroSpeech {
@@ -54,21 +56,35 @@ body {
 }
 
 #counterCharacter {
-    width: 32px;
-    height: 64px;
+    width: 100px;
+    height: 100px;
     background-color: red;
+    bottom: 0px;
+    right: 0px;
 }
 
 #squareTree {
     width: 64px;
     height: 64px;
     background-color: green;
+    left: 400px;
+    top: 150px;
+    transition: all 1s ease-in-out;
+}
+
+#key {
+    width: 32px;
+    height: 32px;
+    background-color: yellow;
+    left: 416px;
+    top: 166px;
 }
 
 #Hero {
     width: 32px;
     height: 32px;
     background-color: pink;
+    transition: all 1s ease-in-out;
 }
 
 #tileMap {}
