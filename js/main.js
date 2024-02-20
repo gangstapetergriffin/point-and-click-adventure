@@ -37,6 +37,11 @@ gameWindow.onclick = function (e) {
                 console.log(" I NED KEY FOR DOOR ")
             }
             break
+        case "statue":
+            console.log("THIS GAME IS SPONSORED BY RAID SHADOW LEGENDS")
+            break
+        default:
+            break
     }
 }
 
