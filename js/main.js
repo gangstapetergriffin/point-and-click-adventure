@@ -1,8 +1,12 @@
 //game window reference
 const gameWindow = document.getElementById("gameWindow");
 
+//gamestate
+gameState = {
+    "inventory": []
+}
+
 //inventory
-let inventory = [];
 inventoryList = document.getElementById("inventoryBox")
 
 //main character
@@ -22,17 +26,19 @@ gameWindow.onclick = function (e) {
 
     switch (e.target.id) {
         case "key":
-            getItem("Rusty Key", "rustykey")
+            changeInventory("key", "add")
+            document.getElementById("key").remove();
             break
         case "well":
-            getItem("coin", "coin")
+            changeInventory("coin", "add")
+            document.getElementById("well").remove();
             break
         case "doorWizardHut":
-            if (checkItem("Rusty Key")) {
+            if (checkItem("key")) {
                 console.log("dor OPEN YESSS");
             } else if (checkItem("coin")) {
-                console.log("my coin GONE WAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH.")
-                removeItem("coin", "coin");
+                console.log("my coin GON E WAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH.")
+                changeInventory("coin", "delete")
             } else {
                 console.log(" I NED KEY FOR DOOR ")
             }
@@ -45,28 +51,35 @@ gameWindow.onclick = function (e) {
     }
 }
 
-function getItem(itemName, itemId) {
-    if (!checkItem(itemName)) {
-        inventory.push(itemName);
-        showItem(itemName, itemId);
+function changeInventory(itemName, action) {
+    if (itemName == null || action == null) {
+        console.error("big error 😭")
+        return
     }
+
+    switch (action) {
+        case 'add':
+            gameState.inventory.push(itemName);
+            break
+        case 'delete':
+            inventory = gameState.inventory.filter(function (newInventory) {
+                return newInventory !== itemName
+            });
+            break
+    }
+    updateInventory(gameState.inventory, inventoryList)
 }
 
 function checkItem(itemName) {
-    return inventory.includes(itemName);
+    return gameState.inventory.includes(itemName);
 }
 
-function showItem(itemName, itemId) {
-    console.log("YOU HAVE FOUND " + itemName + "!");
-    const keyElement = document.createElement("li");
-    keyElement.id = itemId;
-    keyElement.innerText = itemName
-    inventoryList.appendChild(keyElement);
-}
-
-function removeItem(itemName, itemId) {
-    inventory = inventory.filter(function (newInventory) {
-        return newInventory !== itemName
-    });
-    document.getElementById(itemId).remove();
+function updateInventory(inventory, inventoryList) {
+    inventoryList.innerText = "";
+    gameState.inventory.forEach(function (item) {
+        const inventoryItem = document.createElement("li");
+        inventoryItem.id = 'inv-' + item;
+        inventoryItem.innerText = item;
+        inventoryList.appendChild(inventoryItem);
+    })
 }

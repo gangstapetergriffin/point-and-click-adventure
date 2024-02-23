@@ -1,0 +1,24 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "",
+    "expandedProjectPaths": [
+    ],
+    "fileStates": {
+    },
+    "last.imagePath": "C:/Users/kamie/Downloads",
+    "map.height": 19,
+    "map.width": 25,
+    "openFiles": [
+    ],
+    "project": "untitled.tiled-project",
+    "recentFiles": [
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 12,
+        "width": 12
+    }
+}
