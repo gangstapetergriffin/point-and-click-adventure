@@ -34,13 +34,11 @@ body {
     position: relative;
     width: 800px;
     height: 64px;
-    background-color: black;
 }
 
 #heroAvatar {
-    width: 100px;
-    height: 100px;
-    background-color: orange;
+    width: 72px;
+    height: 68px;
     bottom: 0px;
     left: 0px;
 }
@@ -48,27 +46,41 @@ body {
 #heroSpeech {
     width: 300px;
     background-color: white;
+    top: 0px;
+    left: 72px;
+    opacity: 0;
+
 }
 
 #counterSpeech {
     width: 300px;
     background-color: white;
+    top: 0px;
+    right: 72px;
+    opacity: 0;
 }
 
 #counterCharacter {
-    width: 100px;
-    height: 100px;
-    background-color: red;
+    width: 72px;
+    height: 68px;
     bottom: 0px;
     right: 0px;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+#brownBar {
+    bottom: 0px;
+    height: 32px;
+    width: 800px;
+    background-color: rgb(113, 65, 1);
 }
 
 #key {
     width: 32px;
     height: 32px;
-    background-color: yellow;
-    left: 416px;
-    top: 166px;
+    left: 33px;
+    top: 380px;
 }
 
 #well {
@@ -97,7 +109,6 @@ body {
     left: 370px;
     width: 32px;
     height: 32px;
-    background-color: pink;
     transition: all 1s ease-in-out;
 }
 
@@ -116,4 +127,11 @@ body {
 .foreground {
     position: absolute;
     z-index: 1000;
+}
+
+.speechBubble {
+    border-radius: 60px;
+    padding: 5px 5px 5px 20px;
+    user-select: none;
+    transition: all 1s ease-in-out;
 }
