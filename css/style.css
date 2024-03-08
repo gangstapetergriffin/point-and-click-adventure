@@ -79,34 +79,27 @@ body {
 #key {
     width: 32px;
     height: 32px;
-    left: 33px;
-    top: 380px;
-}
-
-#well {
-    width: 64px;
-    height: 64px;
-    left: 290px;
-    top: 90px;
+    left: 703px;
+    top: 271px;
 }
 
 #doorWizardHut {
-    width: 32px;
-    height: 45px;
-    left: 177px;
-    top: 305px;
+    width: 16px;
+    height: 16px;
+    left: 335px;
+    top: 545px;
 }
 
 #statue {
-    width: 32px;
-    height: 64px;
-    left: 704px;
-    top: 287px;
+    width: 16px;
+    height: 32px;
+    left: 304px;
+    top: 63px;
 }
 
 #Hero {
-    top: 288px;
-    left: 370px;
+    top: 190px;
+    left: 770px;
     width: 32px;
     height: 32px;
     transition: all 1s ease-in-out;

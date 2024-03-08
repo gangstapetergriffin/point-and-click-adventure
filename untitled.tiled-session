@@ -3,22 +3,65 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "",
+    "activeFile": "untitled.tmx",
     "expandedProjectPaths": [
+        "."
     ],
+    "file.lastUsedOpenFilter": "All Files (*)",
     "fileStates": {
+        "C:/Users/kamie/Downloads/navmesh-phaser-navmesh-2.3.1/navmesh-phaser-navmesh-2.3.1/public/demo/tilemaps/map.tmx": {
+            "scale": 1.5,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 269,
+                "y": 399.33333333333326
+            }
+        },
+        "C:/Users/kamie/Downloads/navmesh-phaser-navmesh-2.3.1/navmesh-phaser-navmesh-2.3.1/public/demo/tilemaps/map.tmx#tiles": {
+            "scaleInDock": 1
+        },
+        "IDK.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1.5
+        },
+        "tilesets/Sample.tsx": {
+            "scaleInDock": 0.25,
+            "scaleInEditor": 0.5
+        },
+        "tilesets/Settlement.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 2
+        },
+        "untitled.tmx": {
+            "scale": 2,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 261.25,
+                "y": 204
+            }
+        }
     },
-    "last.imagePath": "C:/Users/kamie/Downloads",
-    "map.height": 19,
-    "map.width": 25,
+    "last.imagePath": "C:/Users/kamie/Downloads/Forest BETA V3",
+    "map.height": 38,
+    "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 16,
+    "map.tileWidth": 16,
+    "map.width": 50,
     "openFiles": [
+        "IDK.tsx",
+        "untitled.tmx"
     ],
     "project": "untitled.tiled-project",
     "recentFiles": [
+        "tilesets/Settlement.tsx",
+        "tilesets/Sample.tsx",
+        "untitled.tmx",
+        "IDK.tsx",
+        "C:/Users/kamie/Downloads/navmesh-phaser-navmesh-2.3.1/navmesh-phaser-navmesh-2.3.1/public/demo/tilemaps/map.tmx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {
-        "height": 12,
-        "width": 12
+        "height": 16,
+        "width": 16
     }
 }
